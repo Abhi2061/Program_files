@@ -1,0 +1,29 @@
+knapsack(p, w, k, n)
+{
+    ratio[n];
+
+    loop from i=0 to i<n
+        ratio[i] = {p/w, i};
+    
+    sort ratio in decreasing order;
+
+    ans = 0;
+
+    loop from i=0 to i<n
+    {
+        j = ratio[i][1];
+
+        if(weight[j] < k)
+        {
+            k -= weight[j];
+            ans += profit[j];
+        }
+        else
+        {
+            ans += ratio[i][0]*K;
+            break;
+        }
+    }
+
+    return ans;
+}

@@ -1,0 +1,115 @@
+html {
+    scroll-behavior: smooth;
+}
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    padding-top: 10px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    padding-top: 10px;
+}
+
+img {
+    width: 70%;
+}
+
+.btn {
+    padding: 10px 25px;
+    background-color: rgba(241, 74, 62, 0.993);
+    border-radius: 5px;
+    color: white;
+}
+
+section {
+    margin: 0 30px;
+}
+
+span {
+    color: rgba(248, 120, 28, 0.801);
+    font-family: inherit;
+}
+
+.hero-text h1 {
+    color: rgba(0, 0, 0, 0.658);
+    border-left: 2px solid rgba(248, 79, 28, 0.884);
+    border-top-left-radius: 0.5px;
+    padding-left: 6px;
+    padding-top: 0;
+}
+
+.hero-container, .mission-box, .develop, .community, .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-container {
+    margin-top: 0;
+}
+
+.hero-image img {
+    margin-left: 160px;
+}
+
+
+.mission-section h1 {
+    text-align: center;
+}
+
+.mission-section {
+    margin-top: 80px;
+}
+
+.mission-box {
+    margin-top: 20px;
+}
+
+.mission {
+    background-color: rgba(139, 139, 224, 0.26);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+.contact-section {
+    margin-top: 100px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input {
+    margin-top: 10px;
+    width: 500px;
+    height: 40px;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+textarea {
+    margin: 20px 0;
+    width: 500px;
+
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.contact-image img {
+    width: 550px;
+    margin-bottom: 20px;
+    height: 400px;
+    border: 2px solid rgb(114, 110, 110);
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bot</title>
+    <style>
+        h1 {
+            color : rgb(170, 250, 124);
+        }
+        p {
+            font-size: xx-large;
+        }
+        /* .usr {
+            color: rgb(230, 132, 230);
+        }
+        .bot {
+            color: rgb(0, 132, 255);
+        } */
+        input {
+            font-size: x-large;
+            color: rgb(255, 0, 0);
+        }
+    </style>
+
+    <script>
+        know = {
+            "Hello" : "Hi there!",
+            "hello" : "Hi there!",
+            "Hello" : "Hi there!",
+            "Who are you?" : "I am Jarvis, your personal assistant",
+            "How are you?" : "I am fine",
+            "ok" : ":)"
+        };
+
+        function talk() {
+            var user = document.getElementById("userBox").value;
+            document.getElementById("userBox").value = "";
+            document.getElementsByClassName("usr").innerHTML += "User : "+user+"<br>";
+
+            if(user in know)
+            {
+                document.getElementsById("usr").innerHTML += "Bot: "+know[user]+"<br>";
+            }
+            else
+            {
+                document.getElementsById("usr").innerHTML += "Bot : I don't understand...<br>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <center>
+    <h1> - - - C H A T - - -<br></h1>
+    <p id = "usr"></p>
+    <input id = "userBox" type = "text" onkeydown="if(event.keyCode == 13) { talk() }">
+    </center>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+    .fa {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 40px;
+
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    }
+  
+    .fa:hover {
+        opacity: 0.7;
+    } 
+    
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    
+    .fa-google-plus {
+        background-color: red;
+        color: white;
+    }
+    
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+</style>
+
+<body>
+    <form>
+        <div class = "container d-flex flex-column">
+            <div class="row align-items-center justify-content-center min-vh-100">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="mb-4">
+                            <h5 class="text-center">LOGIN PAGE</h5>
+                        </div>
+                        
+                        <!-- Range -->
+                        <label for="customRange1" class="form-label">Security Level</label>
+                        <input type="range" class="form-range">
+
+                        <br>
+
+                        <!-- Select -->
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select</option>
+                            <option value="1">General Visit</option>
+                            <option value="2">Feedback</option>
+                            <option value="3">Payment</option>
+                        </select>
+
+                        <br>
+
+                        <!-- Form -->
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" class="form-control" name="email" placeholder="Enter Your Email" required="">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" id="password" class="form-control" name="password" placeholder="Enter Your Password" required="">
+                            </div>
+
+                            <div class="mb-3 d-flex">
+                                <a href="" class="float-end">Forget Password</a>
+                            </div>
+
+                            <div class="mb-3 d-grid">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+
+                            <span>Don't have an account? <a href="sign-in.html">sign in</a></span>
+                        </form>
+                        
+                        <center><h2> or </h2></center>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <center><a href="#" class="fa fa-facebook"></a></center>
+                            </div>
+                            <div class="col-sm-4">
+                                <center><a href="#" class="fa fa-google-plus"></a></center>
+                            </div>
+                            <div class="col-sm-4">
+                                <center><a href="#" class="fa fa-twitter"></a></center>
+                            </div>
+                        </div>
+
+                        <!-- Check Box -->
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">Remember Me</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                            <label class="form-check-label" for="flexCheckChecked">Log out from other devices</label>
+                        </div>
+
+                        <br>
+
+                        <!-- Radio Buttons -->
+                        <h5>Login as</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">User</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">Admin</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

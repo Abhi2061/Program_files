@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+/* Styles */
+* {
+margin: 0;
+padding: 0;
+}
+body {
+font-family: "Open Sans";
+font-size: 14px;
+background-color: #c9e622;
+}
+.container {
+width: 500px;
+margin: 25px auto;
+}
+form {
+padding: 20px;
+background: #2c3e50;
+color: #fff;
+-moz-border-radius: 4px;
+-webkit-border-radius: 4px;
+border-radius: 4px;
+}
+form label,
+form input,
+form button {
+border: 0;
+margin-bottom: 3px;
+display: block;
+width: 100%;
+}
+form input {
+height: 25px;
+line-height: 25px;
+background: #fff;
+color: #000;
+padding: 0 6px;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+form button {
+height: 30px;
+line-height: 30px;
+background: #60b56e;
+color: #fff;
+margin-top: 10px;
+cursor: pointer;
+}
+form .error {
+color: #002fff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2 style="text-align: center;">Registration</h2>
+<form action="" name="registration">
+<label for="firstname">First Name</label>
+<input type="text" name="firstname" id="firstname" placeholder=abc Kumar"/>
+<label for="lastname">Last Name</label>
+<input type="text" name="lastname" id="lastname" placeholder="roy"/>
+<label for="email">Email</label>
+<input type="email" name="email" id="email" placeholder="roy17@.com"/>
+<label for="password">Password</label>
+<input type="password" name="password" id="password"
+placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"/>
+<button type="submit" onclick="Regsub();">Register</button>
+<p style="text-align: center;"><a href="http://"> Login click here!</a></p>
+</form>
+</div>
+<script src="vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="js/form-validation.js"></script>
+<script>
+$(function() {
+$("form[name='registration']").validate({
+rules: {
+firstname: "required",
+lastname: "required",
+email: {
+required: true,
+email: true
+},
+password: {
+required: true,
+minlength: 5
+}
+},
+messages: {
+firstname: "Please enter your firstname",
+lastname: "Please enter your lastname",
+password: {
+required: "Please provide a password",
+minlength: "Your password must be at least 5 characters long"
+},
+email: "Please enter a valid email address"
+},
+submitHandler: function(form) {
+form.submit();
+}
+});
+});
+function Regsub(){
+alert("Registration Success...");
+document.getElementById("container").style.display="none";
+}
+</script>
+</body>
+</html>

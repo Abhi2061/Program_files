@@ -1,0 +1,18 @@
+knapsack(p, w, k, n)
+{
+    dp[n+1][k+1];
+
+    loop from i=1 to i<=N
+    {
+        loop from j=1 to j<=knapsack
+        {
+            if(w[i-1] <= j)
+                dp[i][j] = maximum of (p[i-1]+dp[i-1][j-w[i-1]]) and dp[i-1][j]
+            
+            else
+                dp[i][j] = dp[i-1][j];
+        }
+    }
+
+    return dp[n][k];
+}

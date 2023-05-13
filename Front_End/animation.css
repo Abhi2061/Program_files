@@ -1,0 +1,16 @@
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+  /* The element to apply the animation to */
+  div {
+    background-color: red;
+    animation-name: example;
+    animation-duration: 3s;
+    /* animation-iteration-count: 5; */
+    animation-direction: alternate;
+    text-align: center;
+    font-size: 200px;
+    color: blue;
+  }

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Show</title>
+</head>
+<body>
+    <h1> This is slide show</h1>
+
+    <img name="slide" width="800" height="600">
+
+    <script>
+        var i = 0;
+        var images = [];
+        var time = 2;
+
+        
+
+        images[0] = 'https://m.media-amazon.com/images/I/51tKugBLsQL._AC_UY218_.jpg';
+        images[1] = 'https://m.media-amazon.com/images/I/61QGMX0Qy6L._AC_UY218_.jpg';
+        images[2] = 'https://m.media-amazon.com/images/I/61PLUeR9MoS._AC_UY218_.jpg';
+
+        function changeImg() {
+            document.slide.src = images[i];
+
+            if(i < images.length) {
+                i++;
+            }
+            else{
+                i = 0;
+            }
+
+            serTimeout("changeImg()", time);
+        }
+
+        window.onload = changeImg();
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Color</title>
+    <script>
+        function getTime(){
+            let x1 = parseInt(Math.random() * 1000)%256;
+            let x2 = parseInt(Math.random() * 1000)%256;
+            let x3 = parseInt(Math.random() * 1000)%256;
+
+            let x = parseInt(Math.random() * 1000);
+
+            document.getElementById("demo").innerHTML = x;
+            document.body.style.background = 'rgb(' + x1 + ',' + x2 + ',' + x3 + ')';
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <button style = "font-size: 30px;" onclick="getTime()">Press</button>
+        <h1 id = "demo"></h1>
+        
+    </center>
+</body>
+</html>

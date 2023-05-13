@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JSON Intro</title>
+</head>
+<body>
+    <h2>Access a JavaScript using Object</h2>
+
+    <p id = "demo1"></p>
+    <p id = "demo2"></p>
+    <p id = "demo3"></p>
+    <p id = "demo4"></p>
+
+    <script>
+        const myObj = {name:"Abhishek" , age:22, roll:20709}
+        document.getElementById("demo1").innerHTML = "Name : " +myObj.name;
+        document.getElementById("demo2").innerHTML = "Age : " + myObj.age;
+        document.getElementById("demo3").innerHTML = "Roll : " + myObj.roll;
+
+        document.getElementById("demo4").innerHTML = JSON.stringify(myObj);
+    </script>
+
+
+</body>
+</html>

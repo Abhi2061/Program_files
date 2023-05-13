@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Change Image and Color</title>
+		<style>
+			.green {
+				color: green;
+			}
+			.red {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<h1>Change Image and Color</h1>
+		
+
+			<img id="myImg" src="/Front_End/images/cu1.jpg" alt="placeholder image" width="300" height="200">
+			
+			<br>
+
+			<p id="firstPara">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam consectetur, metus eget fermentum feugiat, magna dolor posuere odio, vel vehicula elit leo a nunc. Nullam euismod </p>
+
+			<p id="secondPara">Sed vulputate, quam sed consequat pulvinar, mauris tortor interdum risus, vitae consectetur nunc ex sit amet purus. Sed vel tempor nisl. Donec non tortor non lorem faucibus volutpat.</p>
+			
+			<br>
+
+		<button onclick="change()">Change</button>
+		
+		</center>
+		<script>
+			function change() {
+				var image = document.getElementById("myImg");
+				image.src = "/Front_End/images/cu2.jpeg";
+
+				var para1 = document.getElementById("firstPara");
+				para1.classList.add("green");
+
+				var para2 = document.getElementById("secondPara");
+				para2.classList.add("red");
+
+			}
+		</script>
+	</body>
+</html>
