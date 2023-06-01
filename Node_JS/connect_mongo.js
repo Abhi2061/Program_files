@@ -10,8 +10,8 @@ async function getData()
     let result = await clinet.connect();
     console.log('Connected successfully to server');
 
-    let db = result.db(dbName);
-    let collection = db.collection('products');
+    let db = result.db('sample_mflix');
+    let collection = db.collection('movies');
     let response = await collection.find({}).toArray();
     console.log(response);
 }
